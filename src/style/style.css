@@ -58,16 +58,57 @@ body {
     }
 }
 */
+/* Aturan media untuk layar dengan lebar maksimal 1200px */
+@media (max-width: 1200px) {
+    .responsive {
+        max-width: 75%;
+    }
+    iframe {
+        width: 80vw;
+        max-width: 600px;
+    }
+}
+
+/* Aturan media untuk layar dengan lebar maksimal 992px */
+@media (max-width: 992px) {
+    .responsive {
+        max-width: 70%;
+    }
+    iframe {
+        width: 70vw;
+        max-width: 500px;
+    }
+}
+
+/* Aturan media untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+    .responsive {
+        max-width: 60%;
+    }
+    iframe {
+        width: 60vw;
+        max-width: 450px;
+    }
+}
+
+/* Aturan media untuk layar dengan lebar maksimal 675px */
 @media (max-width: 675px) {
     .responsive {
         max-width: 50%;
     }
     iframe {
-        width: 400px;
+        width: 50vw;
+        max-width: 400px;
     }
 }
-@media (width: 347px) {
+
+/* Aturan media untuk layar dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+    .responsive {
+        max-width: 100%;
+    }
     iframe {
-        width: 350px;
+        width: 90vw;
+        max-width: 300px;
     }
 }
