@@ -1,7 +1,7 @@
 const preloader = document.querySelector("#preloader");
 if (preloader) {
     window.addEventListener("load", () => {
-            preloader.remove();
+        preloader.remove();
     });
 }
 
@@ -19,4 +19,14 @@ menu.addEventListener("click", function (e) {
         }
         targetMenu.classList.add("active");
     }
+});
+
+const title = document.title;
+
+window.addEventListener("blur", () => {
+    document.title = "jangan lupa balik ya...👍";
+});
+
+window.addEventListener("focus", () => {
+    document.title = title;
 });
