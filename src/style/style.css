@@ -7,6 +7,73 @@ body {
 .bg-smoot {
     background-color: #baffc0;
 }
+nav {
+    backdrop-filter: blur(8px);
+}
+.container a {
+    color: black;
+    font-weight: 600;
+}
+
+.container button span {
+    color: black;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* class="navbar-toggler-icon" */
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+/* start */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+/* span x  */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+/* .box-shadow {
+    box-shadow: 0px 0px 2px 0px 0.5px black;
+} */
 
 #preloader {
     position: fixed;
@@ -16,7 +83,6 @@ body {
     background: #baffc0;
     transition: all 0.6s ease-out;
 }
-
 #preloader:before {
     content: "";
     position: fixed;
@@ -25,20 +91,40 @@ body {
     border: 6px solid #ffffff;
     border-color: #188754 transparent #188754 transparent;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     animation: animate-preloader 1.5s linear infinite;
+}
+
+#preloader img {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 150px;
+    animation: animate-preloader-img 1.5s linear infinite;
+}
+@keyframes animate-preloader-img {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 @keyframes animate-preloader {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
 /*
+loding versi pertama 
 #preloader {
     margin: auto;
     border: 20px solid #eaf0f6;
@@ -58,7 +144,7 @@ body {
     }
 }
 */
-/* Aturan media untuk layar dengan lebar maksimal 1200px */
+
 @media (max-width: 1200px) {
     .responsive {
         max-width: 75%;
@@ -69,7 +155,6 @@ body {
     }
 }
 
-/* Aturan media untuk layar dengan lebar maksimal 992px */
 @media (max-width: 992px) {
     .responsive {
         max-width: 70%;
@@ -80,7 +165,6 @@ body {
     }
 }
 
-/* Aturan media untuk layar dengan lebar maksimal 768px */
 @media (max-width: 768px) {
     .responsive {
         max-width: 60%;
@@ -91,7 +175,6 @@ body {
     }
 }
 
-/* Aturan media untuk layar dengan lebar maksimal 675px */
 @media (max-width: 675px) {
     .responsive {
         max-width: 50%;
@@ -102,7 +185,6 @@ body {
     }
 }
 
-/* Aturan media untuk layar dengan lebar maksimal 480px */
 @media (max-width: 480px) {
     .responsive {
         max-width: 100%;
