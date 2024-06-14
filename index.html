@@ -12,8 +12,8 @@
             content="landing page, tradisi, kerapan, madura, kerapan madura"
         />
         <meta name="author" content="abrordc" />
-        <!-- Bootstrap CSS -->
 
+        <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -85,13 +85,16 @@
                             alt="kerapan sapi"
                             width="auto"
                         />
-                        <h1 class="display-4 fw-bold mt-5">Kerapan Sapi</h1>
+                        <h1 id="kr" class="display-4 fw-bold mt-5">
+                            Kerapan Sapi
+                        </h1>
                         <p class="lead">Tradisi Madura</p>
                     </div>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
+                    class="absolute"
                     fill="#BAFFC0"
                     fill-opacity="1"
                     d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,208C672,213,768,235,864,213.3C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
@@ -110,17 +113,7 @@
 
                 <div class="row justify-content-center text-center">
                     <div class="col-8">
-                        <p>
-                            Kerapan sapi adalah tradisi balap sapi asal Madura,
-                            Jawa Timur, di mana dua ekor sapi menarik kereta
-                            kayu dalam perlombaan sepanjang 100 meter. Sebagai
-                            bagian dari festival adat, acara ini memiliki makna
-                            budaya mendalam dan menjadi ajang prestise bagi
-                            pemilik sapi. Sapi-sapi dilatih intensif sebelum
-                            perlombaan, dihias dengan warna cerah dan ornamen
-                            tradisional pada hari perlombaan. Penilaian pemenang
-                            didasarkan pada kecepatan dan kekompakan tim.
-                        </p>
+                        <p id="dc"></p>
                     </div>
                 </div>
             </div>
@@ -326,13 +319,16 @@
 
         <!-- Akhir Footer -->
         <div id="preloader">
-          <img class="" src="src/img/load.png" alt="" />
+            <img src="src/img/load.png"/>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
         <script src="src/js/main.js"></script>
     </body>
 </html>
