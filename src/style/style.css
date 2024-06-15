@@ -26,8 +26,6 @@ nav {
     box-shadow: none;
 }
 
-
-
 /* class="navbar-toggler-icon" */
 .navbar-toggler span {
     display: block;
@@ -71,11 +69,6 @@ nav {
 
 .navbar-toggler span:nth-child(3) {
     transform: translate(0%, 0%) rotate(0deg);
-}
-
-.pdc {
-    overflow: hidden;
-    inset: 0;
 }
 
 /* .box-shadow {
@@ -153,8 +146,7 @@ loding versi pertama
 */
 
 @media (max-width: 1200px) {
-    .responsive,
-    .card {
+    .responsive{
         max-width: 75%;
     }
     iframe {
