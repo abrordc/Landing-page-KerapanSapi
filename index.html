@@ -326,6 +326,37 @@
                     </div>
                 </div>
             </div>
+            <div class="container mt-5 justify-content-center row">
+                <div class="col-md-6">
+                    <h1 id="alarm"></h1>
+                    <audio controls loop id="audio">
+                        <source
+                            src="https://thohirdev.com/upload/bird.mp3"
+                            type="audio/mpeg"
+                        />
+                        <p>Audio tidak disupport browser</p>
+                    </audio>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span
+                            class="input-group-text"
+                            id="inputGroup-sizing-default"
+                            >Alarm</span
+                        >
+                        <input
+                            type="datetime-local"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            id="time"
+                        />
+                    </div>
+                    <button class="btn btn-primary btn-lg" id="simpan">
+                        simpan
+                    </button>
+                </div>
+            </div>
         </footer>
 
         <!-- Akhir Footer -->
