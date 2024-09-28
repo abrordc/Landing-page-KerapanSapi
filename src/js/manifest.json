@@ -1,7 +1,7 @@
 {
   "name": "Kerapan Sapi",
-  "short_name": "PWA",
-  "description": "Membuat Aplikasi PWA Pertama",
+  "short_name": "KR DC",
+  "description": "landing page kerapan sapi",
   "icons": [
     {
       "src": "../img/thumnail.png",
