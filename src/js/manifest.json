@@ -1,0 +1,16 @@
+{
+  "name": "Kerapan Sapi",
+  "short_name": "PWA",
+  "description": "Membuat Aplikasi PWA Pertama",
+  "icons": [
+    {
+      "src": "../img/thumnail.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#baffc0",
+  "background_color": "#baffc0"
+}
